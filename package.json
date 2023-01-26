@@ -17,8 +17,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start --env.PUBLIC_URL='/client/public'",
+    "build": "react-scripts build --env.PUBLIC_URL='/client/public'",
+    "server": "node server/index.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
